@@ -1,4 +1,5 @@
 
+
 Organization
     1) rails g model Organization team:references name:string
 
@@ -6,7 +7,7 @@ Organization
 
 
 Municipality
-    3) rails g model Municipality organization:references name:string url:string
+    3) rails g model Municipality team:references organization:references name:string url:string
 
     4) bin/super-scaffold crud Municipality Organization,Team name:text_field url:text_field
 
